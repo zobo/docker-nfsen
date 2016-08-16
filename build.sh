@@ -8,7 +8,7 @@ useradd -c NFSEN -G www-data netflow
 mkdir -p /var/www
 ln -s /var/www/nfsen /var/www/html
 
-apt-get -y install build-essential flex bison rrdtool librrds-perl libmailtools-perl libsocket6-perl librrd-dev lighttpd php5-cgi php5-cli
+apt-get -y install build-essential flex bison rrdtool librrds-perl libmailtools-perl libsocket6-perl librrd-dev lighttpd php5-cgi php5-cli wget
 
 lighttpd-enable-mod fastcgi-php
 
