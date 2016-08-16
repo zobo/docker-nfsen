@@ -15,7 +15,7 @@ lighttpd-enable-mod fastcgi-php
 #php http?
 #xdrum/nginx-extras
 
-#mkdir /build
+mkdir -p /build
 
 cd /build
 wget http://sourceforge.net/projects/nfdump/files/stable/nfdump-1.6.13/nfdump-1.6.13.tar.gz
