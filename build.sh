@@ -18,7 +18,8 @@ lighttpd-enable-mod fastcgi-php
 #mkdir /build
 
 cd /build
-#tar -xzf /nfdump-1.6.13.tar.gz
+wget http://sourceforge.net/projects/nfdump/files/stable/nfdump-1.6.13/nfdump-1.6.13.tar.gz
+tar -xzf nfdump-1.6.13.tar.gz
 cd nfdump-1.6.13
 # clean ugly mac files
 find . | grep "\\._" | xargs rm
@@ -27,7 +28,8 @@ find . | grep "\\._" | xargs rm
 make && make install
 
 cd /build
-#tar -xzf /nfsen-1.3.7.tar.gz
+wget http://sourceforge.net/projects/nfsen/files/stable/nfsen-1.3.7/nfsen-1.3.7.tar.gz
+tar -xzf nfsen-1.3.7.tar.gz
 cd nfsen-1.3.7
 # clean ugly mac files
 find . | grep "\\._" | xargs rm

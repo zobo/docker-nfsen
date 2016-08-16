@@ -7,8 +7,8 @@ RUN DEBIANFRONTEND=noninteractive apt-get -qq update
 # ADD local internal ?
 # RUN cmd
 
-ADD nfdump-1.6.13.tar.gz /build
-ADD nfsen-1.3.7.tar.gz /build
+#ADD nfdump-1.6.13.tar.gz /build
+#ADD nfsen-1.3.7.tar.gz /build
 ADD build.sh /build.sh
 ADD run.sh /run.sh
 ADD nfsen.conf /nfsen.conf
