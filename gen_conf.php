@@ -4,8 +4,8 @@
 $sources = "%sources = (\n";
 
 foreach (explode(":", $_SERVER['NFSEN_SOURCES']) as $def) {
-	list($ident, $port, $col) = explode(",", $def);
-	$sources .= "\t'{$ident}'\t=> { 'port' => '{$port}', 'col' => '{$col}' },\n";
+	list($ident, $port, $col, $type) = explode(",", $def);
+	$sources .= "\t'{$ident}'\t=> { 'port' => '{$port}', 'col' => '{$col}', 'type' => '{$type}' },\n";
 }
 $sources .=");\n";
 
@@ -19,7 +19,7 @@ $sources .=");\n";
 
 $conf = file_get_contents("/nfsen.conf");
 
-$conf = preg_replace('/%sources = .*;\n/sU', $sources, $conf);
+$conf = preg_replace('/%sources = .*;\n/sU', $sources, $conf );
 
 echo $conf;
 

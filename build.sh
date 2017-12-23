@@ -24,7 +24,7 @@ cd nfdump-1.6.13
 # clean ugly mac files
 find . | grep "\\._" | xargs rm
 
-./configure --enable-nfprofile
+./configure --enable-nfprofile --enable-sflow
 make && make install
 
 cd /build
